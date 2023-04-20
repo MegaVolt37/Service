@@ -31,5 +31,4 @@ export default defineNuxtConfig({
       redirectOn: "root", // recommended
     },
   },
-  rootDir: '/Service/'
 });
