@@ -2,6 +2,7 @@
   "home": "Home",
   "profile": "Profile",
   "contacts": "Сontacts",
+  "cart": "Cart",
   "placeholders": {
     "one": "One",
     "second": "Second",
@@ -18,5 +19,6 @@
     "pt": "pt",
     "ro": "ro",
     "en": "Eng"
-  }
+  },
+  "total": "Total"
 }

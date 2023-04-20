@@ -8,8 +8,8 @@
 
 <script lang="ts" setup>
 import { IProduct } from '~/types/product.interface';
-const useI18 = ref(useI18n({ useScope: 'global' }));
-const { t, locale } = useI18.value
+// const useI18 = ref(useI18n({ useScope: 'global' }));
+// const { t, locale } = useI18.value
 
 const { item } = defineProps({
   item: { type: Object as PropType<IProduct> },

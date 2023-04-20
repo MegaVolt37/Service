@@ -2,6 +2,7 @@
   "home": "Главная",
   "profile": "Профиль",
   "contacts": "Контакты",
+  "cart": "Корзина",
   "placeholders": {
     "one": "Один",
     "second": "Два",
@@ -18,5 +19,6 @@
     "pt": "pt",
     "ro": "ro",
     "en": "Eng"
-  }
+  },
+  "total": "Итого"
 }
