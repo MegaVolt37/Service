@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   vite: {
-    base: '/Service/',
     css: {
       preprocessorOptions: {
         scss: {
@@ -32,7 +31,7 @@ export default defineNuxtConfig({
       redirectOn: "root", // recommended
     },
   },
-  router: {
-    base: '/Service/',
-  },
+  app: {
+    baseURL: '/Service/' // baseURL: '/<repository>/'
+  }
 });
