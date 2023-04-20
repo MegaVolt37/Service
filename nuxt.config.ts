@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  target: 'static',
   vite: {
     css: {
       preprocessorOptions: {
@@ -32,4 +31,9 @@ export default defineNuxtConfig({
       redirectOn: "root", // recommended
     },
   },
+  nitro: {
+    prerender: {
+      routes: ['/Service/']
+    }
+  }
 });
