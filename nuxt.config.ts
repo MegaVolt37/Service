@@ -32,6 +32,6 @@ export default defineNuxtConfig({
     },
   },
   app: {
-    baseURL: '/Service/' // baseURL: '/<repository>/'
+    baseURL: '/service/' // baseURL: '/<repository>/'
   }
 });
