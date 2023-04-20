@@ -31,7 +31,4 @@ export default defineNuxtConfig({
       redirectOn: "root", // recommended
     },
   },
-  app: {
-    baseURL: '/service/' // baseURL: '/<repository>/'
-  }
 });
