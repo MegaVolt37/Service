@@ -31,9 +31,5 @@ export default defineNuxtConfig({
       redirectOn: "root", // recommended
     },
   },
-  nitro: {
-    prerender: {
-      routes: ['/Service/']
-    }
-  }
+  rootDir: '/Service/'
 });
