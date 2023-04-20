@@ -32,7 +32,4 @@ export default defineNuxtConfig({
       redirectOn: "root", // recommended
     },
   },
-  router: {
-    base: '/Service/'
-  }
 });
