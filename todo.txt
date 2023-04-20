@@ -1,0 +1,18 @@
+Header
+  Search
+  Login
+  Register
+  Language
+  Currency
+  Color
+  Support
+Home
+  Catalog
+    Products(Name, Icon)
+  Popular
+    Products(Name, Icon)
+  
+Footer
+  Policy
+  Social
+

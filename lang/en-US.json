@@ -1,0 +1,22 @@
+{
+  "home": "Home",
+  "profile": "Profile",
+  "contacts": "Сontacts",
+  "placeholders": {
+    "one": "One",
+    "second": "Second",
+    "search": "Search"
+  },
+  "searchTextHeader": "",
+  "language": {
+    "ru": "Русский",
+    "fi": "fi",
+    "fr": "fr",
+    "it": "it",
+    "nl": "nl",
+    "pl": "pl",
+    "pt": "pt",
+    "ro": "ro",
+    "en": "Eng"
+  }
+}

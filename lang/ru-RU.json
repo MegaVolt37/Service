@@ -1,0 +1,22 @@
+{
+  "home": "Главная",
+  "profile": "Профиль",
+  "contacts": "Контакты",
+  "placeholders": {
+    "one": "Один",
+    "second": "Два",
+    "search": "Поиск"
+  },
+  "searchTextHeader": "",
+  "language": {
+    "ru": "Русский",
+    "fi": "fi",
+    "fr": "fr",
+    "it": "it",
+    "nl": "nl",
+    "pl": "pl",
+    "pt": "pt",
+    "ro": "ro",
+    "en": "Eng"
+  }
+}
