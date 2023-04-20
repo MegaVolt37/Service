@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   vite: {
+    base: '/Service/',
     css: {
       preprocessorOptions: {
         scss: {
@@ -30,5 +31,8 @@ export default defineNuxtConfig({
       cookieKey: "i18n_redirected",
       redirectOn: "root", // recommended
     },
+  },
+  router: {
+    base: '/Service/',
   },
 });
