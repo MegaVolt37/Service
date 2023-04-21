@@ -2,7 +2,7 @@
   "home": "Home",
   "profile": "Profile",
   "contacts": "Сontacts",
-  "cart": "Cart",
+  "cart": "Purchases",
   "placeholders": {
     "one": "One",
     "second": "Second",
@@ -10,7 +10,7 @@
   },
   "searchTextHeader": "",
   "language": {
-    "ru": "Русский",
+    "ru": "RU",
     "fi": "fi",
     "fr": "fr",
     "it": "it",
@@ -18,7 +18,7 @@
     "pl": "pl",
     "pt": "pt",
     "ro": "ro",
-    "en": "Eng"
+    "en": "EN"
   },
   "total": "Total"
 }

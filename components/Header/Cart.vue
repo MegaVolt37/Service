@@ -1,11 +1,11 @@
 <template>
   <div class="panel__cart">
-    {{ $t('cart') }}
-    <div class="cart__badge" @click="openCart"><span>{{ cartItems.length }}</span></div>
+    <span class="btn__header" role="button">{{ $t('cart') }}</span>
+    <!-- <div class="cart__badge" @click="openCart"><span>{{ cartItems.length }}</span></div> -->
     <div class="cart__items" v-if="isOpenCart">
-      <CartItem v-for="(item, index) in cartItems" :key="index" :item="item.product" />
+      <CartItem v-for="(item, index) in cartItems" :key="index" :item="item" @subtractQuantity="changeQuantity" />
     </div>
-    <div class="cart__footer">
+    <div class="cart__footer" v-if="isOpenCart">
       <span>{{ $t('total') }}:</span>
       <span>100</span>
     </div>
@@ -17,7 +17,7 @@ import CartItem from "@/components/Header/Cart_Item.vue";
 import { ICartItem } from '@/types/cart.interface';
 // const useI18 = ref(useI18n({ useScope: 'global' }));
 // const { t, locale } = useI18.value
-const cartItems: ICartItem[] = [
+const cartItems: ICartItem[] = ref([
   {
     id: 1,
     product: {
@@ -28,7 +28,7 @@ const cartItems: ICartItem[] = [
       rating: 0,
       images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png'],
     },
-    quantity: 1,
+    quantity: 3,
   },
   {
     id: 2,
@@ -42,11 +42,17 @@ const cartItems: ICartItem[] = [
     },
     quantity: 1,
   },
-];
+]);
 const isOpenCart = ref(false);
-const openCart = () => {
+const openCart = async () => {
   isOpenCart.value = !isOpenCart.value
+  const res = await fetchAuth('');
+  console.log(res)
 };
+const changeQuantity = (value: object) => {
+  const { item, quantity } = value;
+  item.quantity = quantity
+}
 </script>
 
 <style lang="scss">

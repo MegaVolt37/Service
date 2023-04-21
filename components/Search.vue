@@ -1,15 +1,14 @@
 <template>
   <div class="search">
-    <input class="" type="text" :placeholder="$t('placeholders.search')"
-      v-model="readSearchText">
-    <button
-      class="">{{
-        $t('placeholders.search')
-      }}</button>
+    <input class="" type="text" :placeholder="$t('placeholders.search')" v-model="readSearchText">
+    <button class="" :name="$t('placeholders.search')">
+      <GlassIcon :fill="'#008D64'" />
+    </button>
   </div>
 </template>
 
 <script lang="ts" setup>
+import GlassIcon from './icons/GlassIcon.vue';
 const route = useRoute();
 const router = useRouter();
 const searchText = ref<string>("");
@@ -37,14 +36,19 @@ onMounted(() => {
 
 <style lang="scss">
 .search {
-  @apply flex gap-2;
+  @apply flex gap-2 h-full relative;
 
   input {
-    @apply text-black pl-2 pr-2 rounded-md h-10;
+    @apply text-black pl-2 pr-10 rounded-md h-full;
   }
 
   button {
-    @apply h-10 border border-white rounded-md flex items-center justify-center pl-1 pr-1 hover:bg-light hover:text-black hover:border-light;
+    @apply flex items-center justify-center absolute right-3 top-1/2 -translate-y-1/2;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 </style>

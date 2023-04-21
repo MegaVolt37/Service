@@ -7,5 +7,12 @@ body {
   background-color: #a5a5a5;
 }
 input {
-  width: 100%;
+  @apply w-full;
+}
+.container {
+  @apply max-w-7xl px-5 m-auto;
+}
+.btn__header {
+  @apply rounded-md text-green border-[1px] h-12 flex items-center
+ justify-center px-[10px] cursor-pointer;
 }
