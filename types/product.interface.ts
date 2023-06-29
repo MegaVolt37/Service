@@ -10,7 +10,9 @@ export interface IProduct {
   hashtags: string[];
   count_sales: number;
   provider: {
+    createdAt: string;
     id: number;
     name: string;
+    image: string;
   };
 }

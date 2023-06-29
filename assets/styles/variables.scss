@@ -4,3 +4,14 @@
   $result: math.div($px, 16) + rem;
   @return $result;
 }
+@mixin textOverflow {
+  overflow-wrap: anywhere;
+  -webkit-line-clamp: 3;
+  /* Число отображаемых строк */
+  display: -webkit-box;
+  /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+  /* Вертикальная ориентация */
+  overflow: hidden;
+  /* Обрезаем всё за пределами блока */
+}

@@ -5,7 +5,7 @@
       <div class="header__top">
         <div class="header__logo">
           <NuxtLink to="/" class="">
-            <img src="" alt="Logo" width="50" height="50">
+            <!-- <NuxtImg loading="lazy" src="" alt="Logo" width="50" height="50"/> -->
             Pay
           </NuxtLink>
         </div>
